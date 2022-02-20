@@ -29,18 +29,21 @@ body {
 }
 
 .banner__container {
-  width: 98%;
+  width: 85%;
   margin: 1rem auto;
-
-  white-space: nowrap;
+}
+.banner__container > div {
+  width: 100%;
   overflow-x: auto;
+  white-space: nowrap;
 }
 .banner {
   display: inline-block;
   position: relative;
-  width: 16rem;
+  width: 14rem;
   background-color: var(--o-gray);
   padding: 0.3rem;
+  margin: 1.5rem;
 }
 .banner__text {
   position: absolute;
@@ -65,14 +68,13 @@ body {
   object-fit: fill;
 }
 .promotion__container {
-  width: 90%;
+  width: 95%;
   margin: auto;
-  padding: 2rem 5rem;
 }
 .promo {
   background-color: var(--o-white);
   color: var(--primary);
-  width: 45rem;
+  width: 50%;
   cursor: pointer;
 }
 .promo_content {
@@ -82,16 +84,5 @@ body {
 @media screen and (min-width: 64rem) {
   html {
     font-size: 100%;
-  }
-}
-
-@media screen and (min-width: 40rem) {
-  .banner__container {
-    width: 60rem;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .banner__container {
-    width: 110rem;
   }
 }
