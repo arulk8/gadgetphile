@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/739eee4960.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./products.css" />
+    <title>Gadgetphile</title>
+  </head>
+  <body class="grid grid-column">
+    <header class="main-header flex-row flex-aic py-8">
+      <div class="header__left--container flex-row flex-aic margin-auto--r">
+        <h2 class="logo__name font-bold">
+          <a class="no-underline c-aux" href="">Gadgetphile</a>
+        </h2>
+      </div>
+
+      <div class="header__center--container">
+        <form action="">
+          <div class="search__container">
+            <span class="header__search--icon fas fa-search"></span>
+            <input
+              class="header__search--bar"
+              placeholder="Search"
+              type="text"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="header__right--container margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline c-aux" href="./index.html">Login </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline c-aux" href="#">
+                <div class="badge">
+                  <i class="fas fa-heart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline c-aux" href="#">
+                <div class="badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+                Cart
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container main">
+      <aside class="side__bar">
+        <div class="filter flex-row vgutter-md">
+          <h5>Filters</h5>
+          <div class="margin-auto--l btn__clear">
+            <a href="#" class="btn__link btn__link--primary"> Clear</a>
+          </div>
+        </div>
+        <div class="price vgutter-md">
+          <h5>Price</h5>
+          <input class="price__range" type="range" />
+          <span> 1000</span>
+        </div>
+        <div class="category vgutter-md">
+          <h5>Category</h5>
+          <form class="category_form">
+            <div class="my-5">
+              <input type="checkbox" id="phone" name="phone" />
+              <label for="phone">Phone</label>
+            </div>
+            <div class="my-5">
+              <input type="checkbox" id="laptop" name="laptop" />
+              <label for="laptop">Laptop</label>
+            </div>
+            <div class="my-5">
+              <input type="checkbox" id="smart-watch" name="smart-watch" />
+              <label for="smart-watch">Smart watch</label>
+            </div>
+            <div class="my-5">
+              <input type="checkbox" id="headphone" name="headphone" />
+              <label for="headphone">Head Phone</label>
+            </div>
+          </form>
+        </div>
+        <div class="rating vgutter-md">
+          <h5>Rating</h5>
+          <form class="category_form">
+            <div class="my-5">
+              <input type="radio" id="4star" name="rating" />
+              <label for="4star">4 Star & Above</label>
+            </div>
+            <div class="my-5">
+              <input type="radio" id="3star" name="rating" />
+              <label for="3star">3 Star & Above</label>
+            </div>
+            <div class="my-5">
+              <input type="radio" id="2star" name="rating" />
+              <label for="2star">2 Star & Above</label>
+            </div>
+            <div class="my-5">
+              <input type="radio" id="1star" name="rating" />
+              <label for="1star">1 Star & Above</label>
+            </div>
+          </form>
+        </div>
+        <div class="sort vgutter-md">
+          <h5>Sort by</h5>
+          <form class="category_form">
+            <div class="my-5">
+              <input type="radio" id="lowHigh" name="sort" />
+              <label for="lowHigh">Price - Low to High</label>
+            </div>
+            <div class="my-5">
+              <input type="radio" id="highLow" name="sort" />
+              <label for="highLow">Price - High to Low</label>
+            </div>
+          </form>
+        </div>
+      </aside>
+      <article class="product__list">
+        <section class="product_section flex-row flex-aic">
+          <h3>Showing All Products</h3>
+          <span>( Showing 20 Products )</span>
+        </section>
+        <main class="products">
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__go--cart font-medium">
+                    Go to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__go--cart font-medium">
+                    Go to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button
+                    class="btn__icon font-semibold btn__icon--danger hide"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../assets/white-headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button btn__add--cart font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+        </main>
+      </article>
+    </div>
+  </body>
+</html>
