@@ -11,11 +11,6 @@ html {
   font-size: 87.5%;
   height: 100%;
 }
-@media screen and (min-width: 64rem) {
-  html {
-    font-size: 100%;
-  }
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -31,4 +26,63 @@ body {
 .badge__count {
   background-color: var(--danger);
   color: var(--white);
+}
+
+.banner__container {
+  width: 85%;
+  margin: 1rem auto;
+}
+.banner__container > div {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.banner {
+  display: inline-block;
+  position: relative;
+  width: 14rem;
+  background-color: var(--o-gray);
+  padding: 0.3rem;
+  margin: 1.5rem;
+}
+.banner__text {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  color: var(--white);
+  background-color: var(--s-danger);
+  width: 100%;
+  text-align: center;
+  padding: 0.35rem;
+}
+.banner .card__image {
+  height: 12rem;
+}
+.hero__section {
+  width: 90%;
+  margin: 1rem auto;
+}
+.hero__section .img {
+  height: 40rem;
+  object-fit: fill;
+}
+.promotion__container {
+  width: 95%;
+  margin: auto;
+}
+.promo {
+  background-color: var(--o-white);
+  color: var(--primary);
+  width: 50%;
+  cursor: pointer;
+}
+.promo_content {
+  padding: 3rem;
+}
+
+@media screen and (min-width: 64rem) {
+  html {
+    font-size: 100%;
+  }
 }
