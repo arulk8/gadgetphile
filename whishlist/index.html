@@ -8,7 +8,6 @@
       src="https://kit.fontawesome.com/739eee4960.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../layout.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./whishlist.css" />
 
@@ -41,7 +40,7 @@
               <a class="no-underline c-aux" href="../auth/index.html">Login </a>
             </li>
             <li class="main-nav__link px-5 font-medium">
-              <a class="no-underline c-aux" href="../whishlist/index.html">
+              <a class="no-underline c-aux" href="./index.html">
                 <div class="badge">
                   <i class="fas fa-heart"></i>
                   <span class="badge__count">3</span>
@@ -59,13 +58,54 @@
             </li>
           </ul>
         </nav>
+        <button
+          id="mobile__open"
+          class="header_action font-bold px-5 no-underline c-aux"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="mobile__close"
+          class="header_action font-bold px-5 no-underline c-aux hide"
+        >
+          <i class="fas fa-times"></i>
+        </button>
       </div>
     </header>
     <div class="container main">
+      <aside id="leftNav" class="mobile__nav--container">
+        <nav class="mobile-nav">
+          <ul
+            class="mobile-nav__links flex-row flex-aic flex-jc-se list-style-none vgutter-md"
+          >
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="./index.html">
+                <div class="badge">
+                  <i class="fas fa-heart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="../cart/index.html">
+                <div class="badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge__count">4</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__btn flex-row flex-jc">
+            <a href="./auth/index.html" class="btn btn__primary no-underline"
+              >Login</a
+            >
+          </div>
+        </nav>
+      </aside>
       <section class="wishlist__title my-8">
         <h3>My Wishlist</h3>
       </section>
-      <div class="wishlist__container flex-row flex-row flex-wrap">
+      <div class="wishlist__container flex-wrap">
         <section class="card card__v">
           <header class="card__header flex-column flex-aic flex-jc">
             <div class="badge-icon__container flex-row flex-aic">
@@ -290,5 +330,6 @@
         </section>
       </div>
     </div>
+    <script async src="../scripts/app.js"></script>
   </body>
 </html>

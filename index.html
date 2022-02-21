@@ -8,8 +8,7 @@
       src="https://kit.fontawesome.com/739eee4960.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../layout.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Gadgetphile</title>
   </head>
   <body class="grid grid-column">
@@ -57,12 +56,56 @@
             </li>
           </ul>
         </nav>
+        <button
+          id="mobile__open"
+          class="header_action font-bold px-5 no-underline c-aux"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="mobile__close"
+          class="header_action font-bold px-5 no-underline c-aux hide"
+        >
+          <i class="fas fa-times"></i>
+        </button>
       </div>
     </header>
     <div class="main">
+      <aside id="leftNav" class="mobile__nav--container">
+        <nav class="mobile-nav">
+          <ul
+            class="mobile-nav__links flex-row flex-aic flex-jc-se list-style-none vgutter-md"
+          >
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="./whishlist/index.html">
+                <div class="badge">
+                  <i class="fas fa-heart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="./cart/index.html">
+                <div class="badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__btn flex-row flex-jc">
+            <a href="./auth/index.html" class="btn btn__primary no-underline"
+              >Login</a
+            >
+          </div>
+        </nav>
+      </aside>
       <section class="banner__container">
-        <div class="">
-          <a href="#" class="banner card card__v no-underline">
+        <div class="flex-row flex-jc-se">
+          <a
+            href="./products/index.html"
+            class="banner card card__v no-underline"
+          >
             <img
               class="card__image"
               src="./assets/white-headphone.jpg"
@@ -70,7 +113,10 @@
             />
             <span class="banner__text"> Phone </span>
           </a>
-          <a href="#" class="banner card card__v no-underline">
+          <a
+            href="./products/index.html"
+            class="banner card card__v no-underline"
+          >
             <img
               class="card__image"
               src="./assets/white-headphone.jpg"
@@ -78,7 +124,10 @@
             />
             <span class="banner__text"> Phone </span>
           </a>
-          <a href="#" class="banner card card__v no-underline">
+          <a
+            href="./products/index.html"
+            class="banner card card__v no-underline"
+          >
             <img
               class="card__image"
               src="./assets/white-headphone.jpg"
@@ -86,7 +135,10 @@
             />
             <span class="banner__text"> Phone </span>
           </a>
-          <a href="#" class="banner card card__v no-underline">
+          <a
+            href="./products/index.html"
+            class="banner card card__v no-underline"
+          >
             <img
               class="card__image"
               src="./assets/white-headphone.jpg"
@@ -103,8 +155,11 @@
           alt="image with laptop"
         />
       </section>
-      <section class="promotion__container flex-row flex-jc-sb">
-        <a class="card card__h flex-row promo no-underline">
+      <section class="promotion__container flex-jc-sb">
+        <a
+          href="./products/index.html"
+          class="card card__h flex-row promo no-underline"
+        >
           <header class="card__header flex-column flex-aic flex-jc">
             <img src="./assets/laptop.jpeg" alt="asus" class="card__image" />
             <div class="card__overlay flex-row flex-aic flex-jc hide">
@@ -122,7 +177,10 @@
             </div>
           </main>
         </a>
-        <a class="card card__h flex-row promo no-underline">
+        <a
+          href="./products/index.html"
+          class="card card__h flex-row promo no-underline"
+        >
           <header class="card__header flex-column flex-aic flex-jc">
             <img
               src="./assets/apple.jpg"
@@ -148,5 +206,6 @@
         </a>
       </section>
     </div>
+    <script async src="./scripts/app.js"></script>
   </body>
 </html>

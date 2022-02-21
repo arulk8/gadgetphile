@@ -8,7 +8,6 @@
       src="https://kit.fontawesome.com/739eee4960.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../layout.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./products.css" />
     <title>Gadgetphile</title>
@@ -17,7 +16,7 @@
     <header class="main-header flex-row flex-aic py-8">
       <div class="header__left--container flex-row flex-aic margin-auto--r">
         <h2 class="logo__name font-bold">
-          <a class="no-underline c-aux" href="">Gadgetphile</a>
+          <a class="no-underline c-aux" href="../index.html">Gadgetphile</a>
         </h2>
       </div>
 
@@ -37,7 +36,9 @@
         <nav class="main-nav">
           <ul class="main-nav__links flex-row flex-aic list-style-none">
             <li class="main-nav__link px-5 font-medium">
-              <a class="no-underline c-aux" href="../auth/index.html">Login </a>
+              <a class="no-underline c-aux" href="../auth/index.html"
+                >Logout
+              </a>
             </li>
             <li class="main-nav__link px-5 font-medium">
               <a class="no-underline c-aux" href="../whishlist/index.html">
@@ -58,10 +59,51 @@
             </li>
           </ul>
         </nav>
+        <button
+          id="mobile__open"
+          class="header_action font-bold px-5 no-underline c-aux"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="mobile__close"
+          class="header_action font-bold px-5 no-underline c-aux hide"
+        >
+          <i class="fas fa-times"></i>
+        </button>
       </div>
     </header>
 
     <div class="container main">
+      <aside id="leftNav" class="mobile__nav--container">
+        <nav class="mobile-nav">
+          <ul
+            class="mobile-nav__links flex-row flex-aic flex-jc-se list-style-none vgutter-md"
+          >
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="../whishlist/index.html">
+                <div class="badge">
+                  <i class="fas fa-heart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="../cart/index.html">
+                <div class="badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__btn flex-row flex-jc">
+            <a href="../auth/index.html" class="btn btn__primary no-underline"
+              >Logout</a
+            >
+          </div>
+        </nav>
+      </aside>
       <aside class="side__bar">
         <div class="filter flex-row vgutter-md">
           <h5>Filters</h5>
@@ -131,7 +173,7 @@
         </div>
       </aside>
       <article class="product__list">
-        <section class="product_section flex-row flex-aic">
+        <section class="product_section">
           <h3>Showing All Products</h3>
           <span>( Showing 20 Products )</span>
         </section>
@@ -530,5 +572,6 @@
         </main>
       </article>
     </div>
+    <script async src="../scripts/app.js"></script>
   </body>
 </html>
