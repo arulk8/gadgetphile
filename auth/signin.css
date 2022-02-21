@@ -1,6 +1,6 @@
 .login__container {
   width: 30rem;
-  margin: auto;
+  margin: 15% auto;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   padding: 4rem;
 }
@@ -13,4 +13,4 @@
 }
 .login__form .btn {
   width: 100%;
-} 
+}

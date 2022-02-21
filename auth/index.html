@@ -8,7 +8,6 @@
       src="https://kit.fontawesome.com/739eee4960.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../layout.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./signin.css" />
 
@@ -59,47 +58,97 @@
             </li>
           </ul>
         </nav>
+        <button
+          id="mobile__open"
+          class="header_action font-bold px-5 no-underline c-aux"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="mobile__close"
+          class="header_action font-bold px-5 no-underline c-aux hide"
+        >
+          <i class="fas fa-times"></i>
+        </button>
       </div>
     </header>
-    <div class="login__container main">
-      <section class="login__label">
-        <h3>Login</h3>
-      </section>
-      <section>
-        <form class="login__form form" action="">
-          <div class="form-group">
-            <label class="label font-medium" for="username"> Username : </label>
-            <input
-              id="username"
-              class="input"
-              type="text"
-              placeholder="tony.stark@xyz.com"
-            />
-          </div>
-          <div class="form-group">
-            <label class="label font-medium" for="username"> Password : </label>
-            <input
-              id="username"
-              class="input"
-              type="password"
-              placeholder="*************"
-            />
-          </div>
-          <div class="flex-row flex-jc">
-            <input id="confirmation" type="checkbox" />
-            <label class="confirmation font-normal" for="confirmation">
-              Remember me</label
+    <div class="main">
+      <aside id="leftNav" class="mobile__nav--container">
+        <nav class="mobile-nav">
+          <ul
+            class="mobile-nav__links flex-row flex-aic flex-jc-se list-style-none vgutter-md"
+          >
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="../whishlist/index.html">
+                <div class="badge">
+                  <i class="fas fa-heart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="../cart/index.html">
+                <div class="badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__btn flex-row flex-jc">
+            <a href="./index.html" class="btn btn__primary no-underline"
+              >Login</a
             >
-            <div class="margin-auto--l text-highlight">
-              Forgot your password?
-            </div>
           </div>
-          <button class="btn btn__primary my-5">Login</button>
-        </form>
-        <div class="margin-auto--l text-highlight font-medium">
-          <a href="./signup.html" class="no-underline"> Create New Account ></a>
-        </div>
-      </section>
+        </nav>
+      </aside>
+      <div class="login__container">
+        <section class="login__label">
+          <h3>Login</h3>
+        </section>
+        <section>
+          <form class="login__form form" action="">
+            <div class="form-group">
+              <label class="label font-medium" for="username">
+                Username :
+              </label>
+              <input
+                id="username"
+                class="input"
+                type="text"
+                placeholder="tony.stark@xyz.com"
+              />
+            </div>
+            <div class="form-group">
+              <label class="label font-medium" for="username">
+                Password :
+              </label>
+              <input
+                id="username"
+                class="input"
+                type="password"
+                placeholder="*************"
+              />
+            </div>
+            <div class="flex-row flex-jc">
+              <input id="confirmation" type="checkbox" />
+              <label class="confirmation font-normal" for="confirmation">
+                Remember me</label
+              >
+              <div class="margin-auto--l text-highlight">
+                Forgot your password?
+              </div>
+            </div>
+            <button class="btn btn__primary my-5">Login</button>
+          </form>
+          <div class="margin-auto--l text-highlight font-medium">
+            <a href="./signup.html" class="no-underline">
+              Create New Account ></a
+            >
+          </div>
+        </section>
+      </div>
     </div>
+    <script async src="../scripts/app.js"></script>
   </body>
 </html>

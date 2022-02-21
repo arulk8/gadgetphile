@@ -8,7 +8,6 @@
       src="https://kit.fontawesome.com/739eee4960.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../layout.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./cart.css" />
 
@@ -38,7 +37,9 @@
         <nav class="main-nav">
           <ul class="main-nav__links flex-row flex-aic list-style-none">
             <li class="main-nav__link px-5 font-medium">
-              <a class="no-underline c-aux" href="../auth/index.html">Login </a>
+              <a class="no-underline c-aux" href="../auth/index.html"
+                >Logout
+              </a>
             </li>
             <li class="main-nav__link px-5 font-medium">
               <a class="no-underline c-aux" href="../whishlist/index.html">
@@ -59,13 +60,54 @@
             </li>
           </ul>
         </nav>
+        <button
+          id="mobile__open"
+          class="header_action font-bold px-5 no-underline c-aux"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="mobile__close"
+          class="header_action font-bold px-5 no-underline c-aux hide"
+        >
+          <i class="fas fa-times"></i>
+        </button>
       </div>
     </header>
     <div class="cart__container main">
+      <aside id="leftNav" class="mobile__nav--container">
+        <nav class="mobile-nav">
+          <ul
+            class="mobile-nav__links flex-row flex-aic flex-jc-se list-style-none vgutter-md"
+          >
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="../whishlist/index.html">
+                <div class="badge">
+                  <i class="fas fa-heart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-nav__link px-5 font-medium">
+              <a class="no-underline c-primary" href="./index.html">
+                <div class="badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge__count">3</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__btn flex-row flex-jc">
+            <a href="../auth/index.html" class="btn btn__primary no-underline"
+              >Logout</a
+            >
+          </div>
+        </nav>
+      </aside>
       <section class="cart__title">
         <h3>My Cart (2)</h3>
       </section>
-      <div class="cart__items-price flex-row flex-jc flex-aist">
+      <div class="cart__items-price">
         <section class="cart__items flex-column flew-jc">
           <section class="card card__h flex-row">
             <header class="card__header flex-column flex-aic flex-jc">
@@ -191,5 +233,6 @@
         </section>
       </div>
     </div>
+    <script async src="../scripts/app.js"></script>
   </body>
 </html>
